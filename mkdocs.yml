@@ -43,31 +43,33 @@ copyright: A project by <a href="https://github.com/fvdb/">Frank van den Brink</
 
 # Page tree
 nav:
-  - What is Vexo?: index.md
-  - Terminology: terminology.md
-  - Installation: installation.md
-  - Changelog: changelog.md
+  - index.md
+  - terminology.md
+  - installation.md
+  - changelog.md
   - Chains:
-    - Introduction: chains/introduction.md
-    - Standard Chains: chains/standard-chains/README.md
-    - Standard - Language Model Chain: chains/standard-chains/language-model-chain.md
-    - Standard - WebText Chain: chains/standard-chains/webtext-chain.md
-    - Standard - Sequential Chain: chains/standard-chains/sequential-chain.md
-    - Standard - Caching Chain: chains/standard-chains/caching-chain.md
-    - Custom Chains: chains/custom-chains.md
-    - Events: chains/events.md
-    - Testing with Chains: chains/testing-with-chains.md
+    - chains/introduction.md
+    - Standard Chains:
+        - chains/standard-chains/README.md
+        - chains/standard-chains/language-model-chain.md
+        - chains/standard-chains/webtext-chain.md
+        - chains/standard-chains/sequential-chain.md
+        - chains/standard-chains/caching-chain.md
+    - chains/custom-chains.md
+    - chains/events.md
+    - chains/testing-with-chains.md
   - Language Models:
-    - Getting Started: language-models/getting-started.md
-    - Available Models: language-models/available-models/README.md
-    - Available - OpenAI Chat: language-models/available-models/openai-chat.md
-    - Custom Models: language-models/custom-models.md
-    - Events: language-models/events.md
-    - Testing with Models: language-models/testing-with-models.md
+    - language-models/getting-started.md
+    - Available Models:
+        - language-models/available-models/README.md
+        - language-models/available-models/openai-chat.md
+    - language-models/custom-models.md
+    - language-models/events.md
+    - language-models/testing-with-models.md
   - Prompts:
-    - Simple Prompts: prompts/simple-prompts.md
-    - Templates: prompts/templates.md
+    - prompts/simple-prompts.md
+    - prompts/templates.md
   - Agents:
-    - Introduction: agents/introduction.md
+    - agents/introduction.md
   - Advanced Topics:
-    - Event Handling: advanced/event-handling.md
+    - advanced/event-handling.md
