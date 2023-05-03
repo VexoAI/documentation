@@ -1,4 +1,4 @@
-# Providers
+# Available Models
 
 The following models are currently implemented by Vexo.
 
