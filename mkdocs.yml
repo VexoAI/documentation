@@ -12,8 +12,7 @@ theme:
   features:
     - navigation.sections
     - navigation.tracking
-    - navigation.path
-    - toc.integrate
+    - navigation.tabs
 extra_css:
   - assets/stylesheets/extra.css
 repo_url: https://github.com/VexoAI/vexo
@@ -44,32 +43,35 @@ copyright: A project by <a href="https://github.com/fvdb/">Frank van den Brink</
 # Page tree
 nav:
   - index.md
-  - terminology.md
-  - installation.md
-  - changelog.md
-  - Chains:
-    - chains/introduction.md
-    - Standard Chains:
-        - chains/standard-chains/README.md
-        - chains/standard-chains/language-model-chain.md
-        - chains/standard-chains/webtext-chain.md
-        - chains/standard-chains/sequential-chain.md
-        - chains/standard-chains/caching-chain.md
-    - chains/custom-chains.md
-    - chains/events.md
-    - chains/testing-with-chains.md
-  - Language Models:
-    - language-models/getting-started.md
-    - Available Models:
-        - language-models/available-models/README.md
-        - language-models/available-models/openai-chat.md
-    - language-models/custom-models.md
-    - language-models/events.md
-    - language-models/testing-with-models.md
-  - Prompts:
-    - prompts/simple-prompts.md
-    - prompts/templates.md
-  - Agents:
-    - agents/introduction.md
-  - Advanced Topics:
-    - advanced/event-handling.md
+  - Getting Started:
+    - getting-started/what-is-vexo.md
+    - getting-started/terminology.md
+    - getting-started/installation.md
+    - getting-started/changelog.md
+  - Reference:
+    - Chains:
+      - reference/chains/introduction.md
+      - Standard Chains:
+          - reference/chains/standard-chains/README.md
+          - reference/chains/standard-chains/language-model-chain.md
+          - reference/chains/standard-chains/webtext-chain.md
+          - reference/chains/standard-chains/sequential-chain.md
+          - reference/chains/standard-chains/caching-chain.md
+      - reference/chains/custom-chains.md
+      - reference/chains/events.md
+      - reference/chains/testing-with-chains.md
+    - Language Models:
+      - reference/language-models/getting-started.md
+      - Available Models:
+          - reference/language-models/available-models/README.md
+          - reference/language-models/available-models/openai-chat.md
+      - reference/language-models/custom-models.md
+      - reference/language-models/events.md
+      - reference/language-models/testing-with-models.md
+    - Prompts:
+      - reference/prompts/simple-prompts.md
+      - reference/prompts/templates.md
+    - Agents:
+      - reference/agents/introduction.md
+    - Advanced Topics:
+      - reference/advanced/event-handling.md
