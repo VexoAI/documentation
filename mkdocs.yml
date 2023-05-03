@@ -7,14 +7,19 @@ theme:
   palette:
     scheme: slate
     primary: black
+  font:
+    text: Inter
+    code: Menlo
   icon:
     repo: fontawesome/brands/github
   features:
     - navigation.sections
     - navigation.tracking
     - navigation.tabs
+    - content.code.copy
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/highlight.css
 repo_url: https://github.com/VexoAI/vexo
 markdown_extensions:
   - admonition
@@ -25,8 +30,6 @@ markdown_extensions:
       line_spans: __span
       use_pygments: true
       pygments_lang_class: true
-      linenums: true
-      anchor_linenums: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
