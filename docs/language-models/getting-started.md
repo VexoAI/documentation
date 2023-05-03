@@ -3,6 +3,8 @@
 Models in Vexo all implement the `Vexo\LanguageModel\LanguageModel` interface which provides a generic way to interact with language models.
 
 ```php
+<?php
+
 LanguageModel::generate(Prompt $prompt, string ...$stops): Response
 ```
 
@@ -11,6 +13,8 @@ The `generate` method takes a prompt, and optionally one or more stop terms. It 
 Have a look at [Providers](providers/) to understand how to instantiate a new model of a particular provider. Once you have instantiated your model, you can simply use it as follows:
 
 ```php
+<?php
+
 // Assumes $model is an instance of \Vexo\LanguageModel\LanguageModel
 $response = $model->generate(
     new \Vexo\Prompt('What is the capital of France?')
@@ -25,6 +29,8 @@ $text = (string) $response->completions();
 You can create a prompt by simply instantiating a new instance of `Prompt` as follows:
 
 ```php
+<?php
+
 $prompt = new \Vexo\Prompt('What is the capital of France?');
 ```
 
@@ -33,6 +39,8 @@ $prompt = new \Vexo\Prompt('What is the capital of France?');
 Optionally, if you want to have a reusable prompt, you can also make use of a `PromptTemplate` and then construct the prompt when you're ready to call the model. To create the above prompt using a template instead, you can do the following:
 
 ```php
+<?php
+
 $promptTemplate = new \Vexo\Prompt\BasicPromptTemplate(
     'What is the capital of {{country}}?',
     ['country']
@@ -48,6 +56,8 @@ Currently Vexo only comes with the `BasicPromptTemplate`, but more may be added 
 Once you have the prompt you can call the model to generate a response.
 
 ```php
+<?php
+
 // $model is an instance of \Vexo\LanguageModel\LanguageModel
 $response = $model->generate($prompt);
 ```
@@ -63,6 +73,8 @@ For instance, if we only want a brief answer to our question above, but our mode
 We can force it to stop generating after the first sentence by providing `'. '` as a stop token.
 
 ```php
+<?php
+
 $response = $model->generate($prompt, '. ');
 ```
 
@@ -73,6 +85,8 @@ The response will now simply contain the completion "The capital of France is Pa
 If you just want the text you can call the `completions` method on the response to return an instance of the `Vexo\LanguageModel\Completions` collection containing the generated text, which you can cast to a string.
 
 ```php
+<?php
+
 $text = (string) $response->completions();
 ```
 
@@ -85,6 +99,8 @@ Some models are able to provide multiple alternate completions for the same prom
 You can get additional metadata related to the response by calling the `metadata` method. The data returned is model-specific so you cannot assume its structure across different models.
 
 ```php
+<?php
+
 $metadata = $response->metadata();
 
 print_r($metadata->toArray());

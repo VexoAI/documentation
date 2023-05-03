@@ -34,6 +34,8 @@ By default SequentialChain will return the output of the last executed chain. Yo
 The example below creates a simple two-step workflow where we have a language model summarize the contents of a webpage.
 
 ```php
+<?php
+
 use Vexo\Chain\Chains;
 use Vexo\Chain\Input;
 use Vexo\Chain\LanguageModelChain;

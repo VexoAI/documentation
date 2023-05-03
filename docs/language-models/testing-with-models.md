@@ -3,6 +3,8 @@
 Vexo provides a `Vexo\LanguageModel\FakeLanguageModel` which is a stub implementation of `Vexo\LanguageModel\LanguageModel`. You can use this for testing classes that depend on it.
 
 ```php
+<?php
+
 use Vexo\LanguageModel\FakeLanguageModel;
 use Vexo\LanguageModel\Response;
 

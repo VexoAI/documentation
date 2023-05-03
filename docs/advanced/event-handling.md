@@ -9,6 +9,8 @@ Multiple components in Vexo emit events through an event dispatcher. Classes whi
 By default a Vexo relies on [league/event](https://event.thephpleague.com/) for the default event dispatcher. You can retrieve the event dispatcher by calling the `eventDispatcher()` method on any supported component.
 
 ```php
+<?php
+
 use Vexo\Chain\PassthroughChain;
 use Vexo\Event\SomethingHappened;
 
@@ -29,6 +31,8 @@ Look at the documentation for the different components to see which events are e
 You can also provide your own [PSR-14](https://www.php-fig.org/psr/psr-14/) compatible event dispatcher to have the component use that instead.
 
 ```php
+<?php
+
 use League\Event\EventDispatcher;
 
 $eventDispatcher = new EventDispatcher();

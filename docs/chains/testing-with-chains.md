@@ -5,6 +5,8 @@ Vexo provides an implementation of `Vexo\LanguageModel\Chain` which you can use 
 This `PassthroughChain` simply outputs whatever its been given as input.
 
 ```php
+<?php
+
 use Vexo\Chain\Input;
 use Vexo\Chain\PassthroughChain;
 
@@ -23,6 +25,8 @@ If you want the chain to be explicitly aware of the input and output it processe
 
 
 ```php
+<?php
+
 $chain = new PassthroughChain(
     inputKeys: ['foo'],
     outputKeys: ['foo']

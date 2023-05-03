@@ -7,6 +7,8 @@ Prompt templates are used to construct prompts from a predefined format combined
 Vexo provides `Vexo\Prompt\BasicPromptTemplate` which can be used to construct prompts using basic templates. You provide the template, and any placeholder names which are to be replaced when rendering the template.
 
 ```php
+<?php
+
 $promptTemplate = new Vexo\Prompt\BasicPromptTemplate(
     'Act as a travel agent. Come up with a {{days}}-day itinerary for a trip to {{destination}}.',
     ['days', 'destination']
@@ -16,6 +18,8 @@ $promptTemplate = new Vexo\Prompt\BasicPromptTemplate(
 You can then render your prompt as follows:
 
 ```php
+<?php
+
 $prompt = $promptTemplate->render(['days' => 3, 'destination' => 'Barcelona, Spain']);
 ```
 

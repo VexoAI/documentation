@@ -17,6 +17,8 @@ This generic interface allows us to easily swap out one chain for another if nee
 A chain's process method always takes a single `Input` object containing all the parameters it needs. You can create one as follows:
 
 ```php
+<?php
+
 // Assumes $chain is an instance of Vexo\Chain\Chain
 $input = new Input(['query' => 'What is the current weather in Amsterdam?']);
 $output = $chain->process($input);
@@ -27,6 +29,8 @@ Which keys you use in the array are dependent upon the specific chain you feed t
 Once the chain has finished processing, it will return an instance of `Vexo\Chain\Output` containing all the output values that the chain has produced. This class implements both PHP's [`ArrayAccess`](https://www.php.net/manual/en/class.arrayaccess.php) and [`IteratorAggregate`](https://www.php.net/manual/en/class.iteratoraggregate) so you can iterate over the values or access them directly.
 
 ```php
+<?php
+
 // Get a single value
 $report = $output['report'];
 

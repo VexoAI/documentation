@@ -11,6 +11,8 @@ You require an OpenAI account and API key to be able to use this model. You can 
 You can instantiate the model as follows, using the default `gpt-3.5-turbo` OpenAI model.
 
 ```php
+<?php
+
 // Replace this with your API key
 $apiKey = getenv('OPENAI_API_KEY');
 
@@ -26,6 +28,8 @@ $model = new Vexo\LanguageModel\OpenAIChatLanguageModel($chatApi);
 If you want to override the model being used or provide other parameters, you can pass them along when instantiating your model.
 
 ```php
+<?php
+
 $model = new Vexo\LanguageModel\OpenAIChatLanguageModel(
   $chatApi,
   new Vexo\LanguageModel\Parameters([
@@ -43,6 +47,8 @@ For a full list of available parameters, please refer to the [OpenAI API referen
 You can add default prompts as model parameters which will be prepended to all requests. This is useful when you want to add system prompts needed to guide the model, but you don't want to include them with every call to the model.&#x20;
 
 ```php
+<?php
+
 $model = new Vexo\LanguageModel\OpenAIChatLanguageModel(
   $chatApi,
   new Vexo\LanguageModel\Parameters([

@@ -11,6 +11,8 @@ You will have to implement the following methods:
 ## Example
 
 ```php
+<?php
+
 use Vexo\Chain\BaseChain;
 use Vexo\Chain\Input;
 use Vexo\Chain\Output;
@@ -47,6 +49,8 @@ echo $output->get('answer'); // Outputs: 42
 The `BaseChain` class will emit the `ChainStarted` and `ChainFinished` events on its own. If you would like to additionally emit your own events, you can use the `emit` method. Make sure your event implements `Vexo\Event\SomethingHappened`.
 
 ```php
+<?php
+
 protected function call(Input $input): Output
 {
     // Some code...

@@ -5,6 +5,8 @@ The chain wraps another chain to provide it with caching capabilities. It relies
 In the example below we wrap it around a WebTextChain to cache webpage text extractions.
 
 ```php
+<?php
+
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Component\Cache\Psr16Cache;
 use Vexo\Chain\CachingChain;
@@ -30,6 +32,8 @@ $output = $cachingChain->process(
 By default no lifetime for the cached outputs is specified, which means that the default lifetime set on the injected cache will be used. If you would like CachingChain to use a specific lifetime, you can provide it using the `lifetime` argument.
 
 ```php
+<?php
+
 $cachingChain = new CachingChain(
     chain: new WebTextChain(),
     cache: new Psr16Cache(new ArrayAdapter()),
@@ -50,6 +54,8 @@ This means that in some scenarios, if the cache is shared between multiple Cachi
 You can override the cache key prefix by providing the `cacheKeyPrefix` argument.
 
 ```php
+<?php
+
 $cachingChain = new CachingChain(
     chain: new WebTextChain(),
     cache: new Psr16Cache(new ArrayAdapter()),

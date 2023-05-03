@@ -5,6 +5,8 @@ The WebText chain downloads a webpage and extracts plain text from it. This is u
 You can use it as follows.
 
 ```php
+<?php
+
 use Vexo\Chain\Input;
 use Vexo\Chain\WebTextChain;
 
@@ -25,6 +27,8 @@ echo $output['text'];
 You can change the input and output keys that the chain uses by providing them as constructor aguments.
 
 ```php
+<?php
+
 $chain = new WebTextChain(
     inputKey: 'location',
     outputKey: 'contents'
@@ -36,6 +40,8 @@ $chain = new WebTextChain(
 By default the chain limits its output to 8000 bytes. You can change that by providing the `maxTextLength` argument.
 
 ```php
+<?php
+
 $chain = new WebTextChain(
     maxTextLength: 4000
 );
@@ -46,6 +52,8 @@ $chain = new WebTextChain(
 WebTextChain uses `php-http/discovery` to automatically detect and use an available [PSR-18](https://www.php-fig.org/psr/psr-18/) compatible client and [PSR-17](https://www.php-fig.org/psr/psr-17/) compatible request factory. If you would like to inject your own HTTP client or request factory, you can do so through the `httpClient` and `requestFactory` arguments.
 
 ```php
+<?php
+
 $chain = new WebTextChain(
     httpClient: new GuzzleHttp\Client(),
     requestFactory: new GuzzleHttp\Psr7\HttpFactory()
@@ -57,6 +65,8 @@ $chain = new WebTextChain(
 By default WebTextChain uses a `DOMDocument` based text extractor based on which strips a downloaded webpage from all its HTML and superfluous whitespace. If you would like to have WebTextChain use your own text extractor, you can simply implement the `Vexo\Chain\WebTextChain\TextExtractor` interface and provide an instance of it through the `textExtractor` argument.
 
 ```php
+<?php
+
 
 use Vexo\Chain\WebTextChain\TextExtractor;
 

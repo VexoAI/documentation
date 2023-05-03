@@ -7,6 +7,8 @@ Prompts are usually constructed from different components to provide the model w
 Vexo provides a basic `Prompt` value object which you can use to wrap your prompt.
 
 ```php
+<?php
+
 $prompt = new Vexo\Prompt\Prompt('What is the capital of France?');
 ```
 

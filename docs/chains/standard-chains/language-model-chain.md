@@ -5,6 +5,8 @@ This chain enables running queries against a given language model using a prompt
 You can use it as follows.
 
 ```php
+<?php
+
 use Vexo\Chain\Input;
 use Vexo\Chain\LanguageModelChain;
 use Vexo\LanguageModel\FakeLanguageModel;
@@ -45,6 +47,8 @@ You can change the inputs by providing an array of names in the `inputKeys` cons
 This will allow us to use more relevant names in the prompt template as well, input, and output processing as well:
 
 ```php
+<?php
+
 // Create our basic prompt template
 $promptTemplate = new BasicPromptTemplate(
     'You are a travel advisor. Give me an itinerary for a {{days}}-day trip to {{destination}}.',
@@ -73,6 +77,8 @@ In some scenarios you want the language model to not generate beyond certain sto
 
 
 ```php
+<?php
+
 $chain = new LanguageModelChain(
     languageModel: $languageModel,
     promptTemplate: $promptTemplate,

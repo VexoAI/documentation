@@ -5,6 +5,8 @@ The easiest way to create your own models is by extending the `Vexo\LanguageMode
 You can do as follows.
 
 ```php
+<?php
+
 use Vexo\LanguageModel\BaseLanguageModel;
 use Vexo\LanguageModel\Response;
 use Vexo\Prompt\Prompt;
@@ -27,6 +29,8 @@ final class AcmeLanguageModel extends BaseLanguageModel
 Alternatively you can also instantiate and instance of `Vexo\LanguageModel\Response` yourself if you have additional metadata to pass on.
 
 ```php
+<?php
+
 protected function call(Prompt $prompt, string ...$stops): Response
 {
     return new Response(
@@ -41,6 +45,8 @@ protected function call(Prompt $prompt, string ...$stops): Response
 The `BaseLanguageModel` class will emit the `StartedGeneratingCompletion` and `FinishedGeneratingCompletion` events on its own. If you would like to additionally emit your own events, you can use the `emit` method. Make sure your event implements `Vexo\Event\SomethingHappened`.
 
 ```php
+<?php
+
 protected function call(Prompt $prompt, string ...$stops): Response
 {
     // Some code...
