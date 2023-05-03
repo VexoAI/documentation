@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}" />
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block hero %}
+    <img class="home-logo" src="{{ config.theme.logo | url }}" alt="{{ config.site_name }}" />
+{% endblock %}
+
+{% block tabs %}{% endblock %}
+
+{% block content %}
+    <p class="home-payoff">A flexible component library for PHP to help you build AI-driven applications</p>
+
+    <nav class="home-nav">
+        <ul>
+            <li><a href="{{ 'getting-started/what-is-vexo/' | url }}">Get started</a></li>
+            <li><a href="{{ config.repo_url }}">Source code</a></li>
+        </ul>
+    </nav>
+{% endblock %}
