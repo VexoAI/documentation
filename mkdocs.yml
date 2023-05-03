@@ -20,15 +20,19 @@ repo_url: https://github.com/VexoAI/vexo
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.highlight:
       line_spans: __span
       use_pygments: true
       pygments_lang_class: true
       linenums: true
       anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 extra:
   social:
     - icon: fontawesome/brands/twitter
