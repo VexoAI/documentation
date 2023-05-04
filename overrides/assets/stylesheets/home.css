@@ -19,7 +19,7 @@
 
 .home-nav ul {
     list-style: none;
-    margin: 3rem 0 0 0;
+    margin: 3rem 0;
     padding: 0;
     display: flex !important;
 }
@@ -45,6 +45,21 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .home-payoff {
+        font-size: 1.2rem;
+    }
+
+    .home-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-nav li {
+        margin: 1rem 0;
+    }
+}
+
 .md-content {
     background-color: transparent;
     margin-bottom: 0;
@@ -52,4 +67,8 @@
 
 .md-main__inner {
     margin-top: 0;
-  }
+}
+
+.md-footer__inner:not([hidden]) {
+    display: none;
+}
