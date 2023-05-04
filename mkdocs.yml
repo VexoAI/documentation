@@ -17,6 +17,7 @@ theme:
     - navigation.sections
     - navigation.tracking
     - navigation.tabs
+    - navigation.footer
     - content.code.copy
 extra_css:
   - assets/stylesheets/extra.css
@@ -37,6 +38,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -48,11 +53,13 @@ copyright: A project by <a href="https://github.com/fvdb/">Frank van den Brink</
 # Page tree
 nav:
   - index.md
-  - Getting Started:
-    - getting-started/what-is-vexo.md
-    - getting-started/terminology.md
+  - Getting started:
+    - getting-started/introduction.md
     - getting-started/installation.md
+    - getting-started/contributing.md
+    - getting-started/security-vulnerabilities.md
     - getting-started/changelog.md
+    - getting-started/license.md
   - Reference:
     - Chains:
       - reference/chains/introduction.md
