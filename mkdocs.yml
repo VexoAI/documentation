@@ -62,6 +62,7 @@ nav:
     - getting-started/changelog.md
     - getting-started/license.md
   - Reference:
+    - reference/introduction.md
     - Chains:
       - reference/chains/introduction.md
       - Standard Chains:
