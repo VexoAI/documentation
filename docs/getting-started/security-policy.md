@@ -1,4 +1,4 @@
-# Security vulnerabilities
+# Security policy
 
 We want to make sure that Vexo is a secure library for all. If you have discovered a security vulnerability in Vexo, we appreciate your help in disclosing it to us in a [responsible manner](https://en.wikipedia.org/wiki/Responsible_disclosure).
 
