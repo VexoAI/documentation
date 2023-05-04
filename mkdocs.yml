@@ -22,6 +22,7 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/highlight.css
 repo_url: https://github.com/VexoAI/vexo
+repo_name: VexoAI/vexo
 markdown_extensions:
   - admonition
   - pymdownx.details
