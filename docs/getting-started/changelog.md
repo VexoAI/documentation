@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+* Added Compare component
+
 ## 0.3.1
 
 * Cleaned up library dependencies
