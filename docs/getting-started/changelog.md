@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0
+
+* Extracted common data structures to contracts for interoperability
+* Reorganised namespaces
+* Added VectorStore component
+* Added Retriever component
+* Added LanguageModelChain factory and initial blueprints
+* Added ConcatenateDocuments Chain
+* Added DocumentsRetrieverChain
+* Added CsvFileLoader
+
 ## 0.4.0
 
 * Added Compare component
