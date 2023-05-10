@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.1
+
+* Fix incorrect prompt template value replacement
+
 ## 0.5.0
 
 * Extracted common data structures to contracts for interoperability
