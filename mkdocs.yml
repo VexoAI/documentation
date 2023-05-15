@@ -11,8 +11,6 @@ theme:
   font:
     text: Inter
     code: Menlo
-  icon:
-    repo: fontawesome/brands/github
   features:
     - navigation.sections
     - navigation.tracking
@@ -22,8 +20,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/highlight.css
-repo_url: https://github.com/VexoAI/vexo
-repo_name: VexoAI/vexo
 markdown_extensions:
   - attr_list
   - md_in_html
