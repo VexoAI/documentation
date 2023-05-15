@@ -1,4 +1,4 @@
-# Veco Documentation
+# Vexo Documentation
 
 This repository contains the documentation for [Vexo](https://github.com/VexoAI/vexo).
 
