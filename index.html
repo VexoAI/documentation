@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="favicon.png">
+
+        <title>Vexo</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CMenlo:400,400i,700,700i&display=fallback">
+        <style>
+            html {
+                background: rgb(11,28,58);
+                background: linear-gradient(130deg, rgba(11,28,58,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(11,28,58,1) 100%) fixed no-repeat;
+            }
+            body {
+                font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+                -moz-osx-font-smoothing: grayscale;
+                color: rgb(233, 235, 252);
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .logo {
+                height: 19rem;
+                margin-top: 2rem;
+                max-width: 100%;
+            }
+            @media (max-width: 768px) {
+                .logo {
+                    height: 15rem;
+                }
+            }
+            .payoff {
+                text-align: center;
+                font-size: 2rem;
+                line-height: 3.8rem;
+                max-width: 36rem;
+                margin: 2.2rem 1.5rem;
+            }
+            @media (max-width: 768px) {
+                .payoff {
+                    font-size: 1.8rem;
+                    line-height: 3.2rem;
+                }
+            }
+            .nav ul {
+                display: flex;
+                list-style: none;
+                margin: 2.4rem 1.5rem;
+                padding: 0;
+            }
+            .nav li {
+                margin: 0 1.5rem;
+            }
+            @media (max-width: 768px) {
+                .nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .nav li {
+                    margin: 1rem 1.5rem;
+                }
+            }
+            .nav a {
+                display: inline-block;
+                background-color: transparent;
+                border: 0.2rem solid #00aeff;
+                border-radius: 0.5rem;
+                padding: 0.8rem 1.6rem;
+                font-size: 1.8rem;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+                color: #00aeff;
+            }
+            .nav a:hover {
+                background-color: #00aeff;
+                color: #fff;
+            }
+            .footer {
+                margin: 3rem 1rem;
+            }
+            .footer p {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            .footer a {
+                color: #00aeff;
+                transition: color 125ms;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                color: #B98904;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo" src="logo.svg" alt="Vexo">
+            <p class="payoff">A flexible component library for PHP to help you build AI-driven applications</p>
+            <nav class="nav">
+                <ul>
+                    <li><a href="https://vexo.ai/docs/latest/">Get started</a></li>
+                    <li><a href="https://github.com/VexoAI/vexo/">Source code</a></li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <p>A project by <a href="https://twitter.com/fvdb">Frank van den Brink</a></p>
+            </p>
+        </div>
+    </body>
+</html>
