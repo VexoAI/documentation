@@ -52,41 +52,4 @@ extra:
       link: https://github.com/VexoAI/
 copyright: A project by <a href="https://github.com/fvdb/">Frank van den Brink</a>
 
-# Page tree
-nav:
-  - index.md
-  - Getting started:
-    - getting-started/introduction.md
-    - getting-started/installation.md
-    - getting-started/contributing.md
-    - getting-started/security-policy.md
-    - getting-started/changelog.md
-    - getting-started/license.md
-  - Reference:
-    - reference/introduction.md
-    - Chains:
-      - reference/chains/introduction.md
-      - Standard Chains:
-          - reference/chains/standard-chains/README.md
-          - reference/chains/standard-chains/language-model-chain.md
-          - reference/chains/standard-chains/webtext-chain.md
-          - reference/chains/standard-chains/sequential-chain.md
-          - reference/chains/standard-chains/caching-chain.md
-      - reference/chains/custom-chains.md
-      - reference/chains/events.md
-      - reference/chains/testing-with-chains.md
-    - Language Models:
-      - reference/language-models/getting-started.md
-      - Available Models:
-          - reference/language-models/available-models/README.md
-          - reference/language-models/available-models/openai-chat.md
-      - reference/language-models/custom-models.md
-      - reference/language-models/events.md
-      - reference/language-models/testing-with-models.md
-    - Prompts:
-      - reference/prompts/simple-prompts.md
-      - reference/prompts/templates.md
-    - Agents:
-      - reference/agents/introduction.md
-    - Advanced Topics:
-      - reference/advanced/event-handling.md
+INHERIT: navigation.yml
