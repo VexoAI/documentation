@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.0
+
+* Moved Prompt and OutputParser to LanguageModelChain namespace
+* Moved TextSplitter and Tokenizer to DocumentLoader namespace
+* Refactored chains for easier usage and clarity
+* Removed superfluous event dispatching logic
+* Switched to twig-based prompt templates
+* LanguageModelChain now always has an output parser
+* Refactored agents for easier usage and clarity
+* Added OpenAI completions model
+
 ## 0.5.1
 
 * Fix incorrect prompt template value replacement
