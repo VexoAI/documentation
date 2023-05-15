@@ -101,6 +101,10 @@ body {
     color: #B98904;
 }
 
+.md-search-result__list {
+    background: #111;
+}
+
 .md-nav__item .md-nav__link--active {
     color: #B98904;
     font-weight: bold;
