@@ -16,6 +16,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.footer
+    - navigation.top
     - content.code.copy
 extra_css:
   - assets/stylesheets/extra.css
