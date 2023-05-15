@@ -49,13 +49,26 @@ body {
     line-height: 2;
 }
 
+.md-nav__title {
+    display: none;
+}
+
 .md-nav__item--section {
     margin-top: 2.5em;
+}
+
+.md-nav__item--section:first-of-type {
+    margin-top: 0;
 }
 
 .md-nav--lifted > .md-nav__list > .md-nav__item > [for],
 .md-nav__item--section > .md-nav__link[for] {
     text-transform: uppercase;
+}
+
+.md-nav__item .md-nav__link--active {
+    color: #B98904;
+    font-weight: bold;
 }
 
 .md-typeset {
@@ -103,11 +116,6 @@ body {
 
 .md-search-result__list {
     background: #111;
-}
-
-.md-nav__item .md-nav__link--active {
-    color: #B98904;
-    font-weight: bold;
 }
 
 .md-typeset table:not([class]) {
