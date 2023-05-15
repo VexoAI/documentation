@@ -1,0 +1,4 @@
+Pygments
+mkdocs
+mkdocs-material
+git+ssh://git@github.com/jimporter/mike.git@master
