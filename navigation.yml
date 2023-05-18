@@ -1,37 +1,43 @@
 nav:
-  - index.md
-  - Getting started:
-    - getting-started/introduction.md
-    - getting-started/installation.md
-    - getting-started/contributing.md
-    - getting-started/security-policy.md
-    - getting-started/changelog.md
-    - getting-started/license.md
-  - Reference:
-    - reference/introduction.md
-    - Chains:
-      - reference/chains/introduction.md
-      - Standard Chains:
-          - reference/chains/standard-chains/README.md
-          - reference/chains/standard-chains/language-model-chain.md
-          - reference/chains/standard-chains/webtext-chain.md
-          - reference/chains/standard-chains/sequential-chain.md
-          - reference/chains/standard-chains/caching-chain.md
-      - reference/chains/custom-chains.md
-      - reference/chains/events.md
-      - reference/chains/testing-with-chains.md
-    - Language Models:
-      - reference/language-models/getting-started.md
-      - Available Models:
-          - reference/language-models/available-models/README.md
-          - reference/language-models/available-models/openai-chat.md
-      - reference/language-models/custom-models.md
-      - reference/language-models/events.md
-      - reference/language-models/testing-with-models.md
-    - Prompts:
-      - reference/prompts/simple-prompts.md
-      - reference/prompts/templates.md
-    - Agents:
-      - reference/agents/introduction.md
-    - Advanced Topics:
-      - reference/advanced/event-handling.md
+  - Vexo:
+    - index.md
+    - installation.md
+    - changelog.md
+    - contributing.md
+    - security-policy.md
+    - license.md
+
+  - Chain:
+    - chain/getting-started.md
+    - LanguageModelChain:
+      - chain/language-model-chain/introduction.md
+      - Prompt renderers:
+        - chain/language-model-chain/prompt-renderers/StrReplaceRenderer.md
+        - chain/language-model-chain/prompt-renderers/TwigRenderer.md
+        - chain/language-model-chain/prompt-renderers/create-your-own.md
+      - Output parsers:
+        - chain/language-model-chain/output-parsers/RegexOutputParser.md
+        - chain/language-model-chain/output-parsers/JsonOutputParser.md
+        - chain/language-model-chain/output-parsers/create-your-own.md
+      - chain/language-model-chain/blueprints.md
+    - Execution chains:
+      - chain/execution-chains/SequentialChain.md
+      - chain/execution-chains/BranchingChain.md
+      - chain/execution-chains/CachingChain.md
+    - Document chains:
+      - chain/document-chains/DocumentsRetrieverChain.md
+      - chain/document-chains/ConcatenateDocumentsChain.md
+    - External systems:
+      - chain/external-systems/WebTextChain.md
+
+  - Model:
+    - model/introduction.md
+
+  - Document Loader:
+    - document-loader/introduction.md
+
+  - Vector Store:
+    - vector-store/introduction.md
+
+  - Agent:
+    - agent/introduction.md
