@@ -26,15 +26,15 @@ nav:
       - chain/execution-chains/CachingChain.md
     - Document chains:
       - chain/document-chains/DocumentsRetrieverChain.md
-      - chain/document-chains/ConcatenateDocumentsChain.md
+      - chain/document-chains/CombineDocumentsChain.md
     - External systems:
       - chain/external-systems/WebTextChain.md
 
   - Model:
     - model/introduction.md
 
-  - Document Loader:
-    - document-loader/introduction.md
+  - Document:
+    - document/introduction.md
 
   - Vector Store:
     - vector-store/introduction.md

@@ -36,7 +36,7 @@ $branchingChain = new BranchingChain(
         "action in ['some-chain', 'another']" => new Chain(...), // true
         "thing['foo'] == 'bar'"               => new Chain(...), // true
         "definitely"                          => new Chain(...), // true
-        "doesNotExist "                       => new Chain(...)  // Throws an exception
+        "doesNotExist"                        => new Chain(...)  // Throws an exception
     ]
 );
 
