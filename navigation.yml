@@ -29,6 +29,7 @@ nav:
       - chain/document-chains/CombineDocumentsChain.md
     - External systems:
       - chain/external-systems/WebTextChain.md
+    - chain/building-your-own.md
 
   - Model:
     - model/introduction.md
