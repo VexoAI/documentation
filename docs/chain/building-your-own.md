@@ -20,11 +20,13 @@ In the following example we build a basic chain which takes documents from the c
 
 use Vexo\Chain\Chain;
 use Vexo\Chain\Context;
+use Vexo\Document\TextSplitter\CharacterTextSplitter;
+use Vexo\Document\TextSplitter\TextSplitter;
 
 final class SplitDocumentsChain implements Chain
 {
     public function __construct(
-        private readonly CharacterTextSplitter $splitter
+        private readonly TextSplitter $splitter
     ) {
     }
 
@@ -40,6 +42,16 @@ final class SplitDocumentsChain implements Chain
         $context->put('split_documents', $splitDocuments);
     }
 }
+
+// Instantiate our chain
+$chain = new SplitDocumentsChain(new CharacterTextSplitter());
+
+// Call the chain
+$context = new Context(['documents' => $documents]); // Documents is an instance of Documents
+$chain->run($context);
+
+// Get the split documents from the context
+$splitDocuments = $context->get('split_documents');
 ```
 
 ## Asserting context values
@@ -56,11 +68,12 @@ If in the example above we want to make sure that the context contains a documen
 use Vexo\Chain\Chain;
 use Vexo\Chain\Context;
 use Vexo\Chain\ContextAssert;
+use Vexo\Document\TextSplitter\TextSplitter;
 
 final class SplitDocumentsChain implements Chain
 {
     public function __construct(
-        private readonly CharacterTextSplitter $splitter
+        private readonly TextSplitter $splitter
     ) {
     }
 
@@ -89,6 +102,7 @@ Usually we want to offer the flexibility to the user to specify which context va
 use Vexo\Chain\Chain;
 use Vexo\Chain\Context;
 use Vexo\Chain\ContextAssert;
+use Vexo\Document\TextSplitter\TextSplitter;
 
 final class SplitDocumentsChain implements Chain
 {
@@ -96,7 +110,7 @@ final class SplitDocumentsChain implements Chain
     private const OUTPUT_SPLIT_DOCUMENTS = 'split_documents';
 
     public function __construct(
-        private readonly CharacterTextSplitter $splitter,
+        private readonly TextSplitter $splitter,
         private readonly array $inputMap = [],
         private readonly array $outputMap = []
     ) {
