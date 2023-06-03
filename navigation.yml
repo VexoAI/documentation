@@ -32,7 +32,13 @@ nav:
     - chain/building-your-own.md
 
   - Model:
-    - model/introduction.md
+    - Completion:
+      - model/completion/introduction.md
+      - model/completion/OpenAI.md
+      - model/completion/OpenAIChat.md
+    - Embedding:
+      - model/embedding/introduction.md
+      - model/embedding/OpenAI.md
 
   - Document:
     - document/introduction.md
