@@ -42,6 +42,18 @@ nav:
 
   - Document:
     - document/introduction.md
+    - Loader:
+      - document/loader/introduction.md
+      - document/loader/DirectoryLoader.md
+      - document/loader/CsvFileLoader.md
+      - document/loader/TextFileLoader.md
+    - Retriever:
+      - document/retriever/introduction.md
+      - document/retriever/VectorStoreRetriever.md
+    - TextSplitter:
+      - document/text-splitter/introduction.md
+      - document/text-splitter/CharacterTextSplitter.md
+      - document/text-splitter/TokenTextSplitter.md
 
   - Vector Store:
     - vector-store/introduction.md
