@@ -1,0 +1,140 @@
+:root > * {
+    --md-default-bg-color: transparent;
+}
+
+html {
+    background: rgb(11,28,58);
+    background: linear-gradient(130deg, rgba(11,28,58,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(11,28,58,1) 100%) fixed no-repeat;
+}
+
+body {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 76.25em) {
+    [data-md-color-primary="black"] .md-tabs {
+        background-color: rgba(255,255,255,.05);
+    }
+}
+
+[data-md-component="outdated"] .md-banner {
+    background-color: #9b5a5a;
+    color: #fff;
+    text-align: center;
+}
+
+.md-footer {
+    background-color: rgba(255,255,255,.05);
+}
+
+.md-footer-meta {
+    background-color: transparent;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 2rem;
+}
+
+.md-version__link,
+.md-version__link:focus {
+    background: #111;
+    font-weight: normal;
+}
+
+.md-content {
+    background-color: rgba(255,255,255,.05);
+    margin-bottom: 1.5rem;
+}
+
+.md-nav {
+    line-height: 2;
+}
+
+.md-nav__title {
+    display: none;
+}
+
+.md-nav__item--section {
+    margin-top: 2.5em;
+}
+
+.md-nav__item--section:first-of-type {
+    margin-top: 0;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item > [for],
+.md-nav__item--section > .md-nav__link[for] {
+    text-transform: uppercase;
+}
+
+.md-nav__item .md-nav__link--active {
+    color: #B98904;
+    font-weight: bold;
+}
+
+.md-typeset {
+    line-height: 1.8;
+}
+
+.md-header__title .md-header__topic .md-ellipsis {
+    display: none;
+}
+
+.md-header__topic {
+    right: 0;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-width: 0;
+    border-left-width: 4px;
+    font-size: 0.8rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.md-typeset a {
+    color: #00aeff;
+}
+
+.md-version__link:focus,
+.md-version__link:hover,
+.md-nav__link:focus,
+.md-nav__link:hover,
+.md-typeset a:focus,
+.md-typeset a:hover {
+    color: #B98904;
+}
+
+.md-search-result__list {
+    background: #111;
+}
+
+.md-typeset table:not([class]) {
+    font-size:.8rem;
+    background-color: hsla(var(--md-hue),15%,15%,1);
+}
+
+.md-typeset table:not([class]) td {
+    padding: .9375em;
+}
+
+.md-typeset td > code,
+.md-typeset p > code {
+    color: #fff;
+    font-size: .8em;
+}
+
+.md-typeset pre > code:hover {
+    scrollbar-color: #B98904 #0000;
+}
+
+.highlight {
+    font-size: .9em;
+}
