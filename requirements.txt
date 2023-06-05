@@ -1,4 +1,4 @@
 Pygments
 mkdocs
 mkdocs-material
-mike @ git+https://github.com/jimporter/mike@main
+mike @ git+https://github.com/jimporter/mike@master
